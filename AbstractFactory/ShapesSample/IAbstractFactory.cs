@@ -1,8 +1,7 @@
 ﻿
-namespace AbstractFactory.ShapesSample
+namespace AbstractFactory.ShapesSample;
+
+public interface IAbstractFactory
 {
-    public interface IAbstractFactory
-    {
-        IShape GetShape(ShapeTypes shapeType);
-    }
+    IShape GetShape(ShapeTypes shapeType);
 }

@@ -1,10 +1,9 @@
 ﻿
-namespace Builder.FastFoodRestaurantSample
+namespace Builder.FastFoodRestaurantSample;
+
+public interface IItem
 {
-    public interface IItem
-    {
-        string Name();
-        IPacking Packing();
-        float Price();
-    }
+    string Name();
+    IPacking Packing();
+    float Price();
 }

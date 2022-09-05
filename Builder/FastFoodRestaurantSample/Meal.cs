@@ -1,33 +1,33 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
-namespace Builder.FastFoodRestaurantSample
+namespace Builder.FastFoodRestaurantSample;
+
+public class Meal
 {
-    public class Meal
+    private readonly List<IItem> items = new ();
+
+    public void AddItem(IItem item)
     {
-        private List<IItem> items = new ();
+        items.Add(item);
+    }
 
-        public void AddItem(IItem item)
+    public float GetCost()
+    {
+        float cost = 0.0f;
+        foreach(var item in items)
         {
-            items.Add(item);
+            cost += item.Price();
         }
+        return cost;
+    }
 
-        public float GetCost()
+    public void ShowItems()
+    {
+        foreach (var item in items)
         {
-            float cost = 0.0f;
-            foreach(var item in items)
-            {
-                cost += item.Price();
-            }
-            return cost;
-        }
-
-        public void ShowItems()
-        {
-            foreach (var item in items)
-            {
-                Console.WriteLine($"The items: {item.Name()}, Packing: {item.Packing().Pack()} and Price: {item.Price()}");
-            }
+            Console.WriteLine($"The items: {item.Name()}, Packing: {item.Packing().Pack()} and Price: {item.Price()}");
         }
     }
 }

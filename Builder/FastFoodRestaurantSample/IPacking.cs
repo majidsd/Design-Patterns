@@ -1,8 +1,7 @@
 ﻿
-namespace Builder.FastFoodRestaurantSample
+namespace Builder.FastFoodRestaurantSample;
+
+public interface IPacking
 {
-    public interface IPacking
-    {
-        string Pack();
-    }
+    string Pack();
 }

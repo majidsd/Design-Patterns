@@ -1,9 +1,8 @@
 ﻿
-namespace AbstractFactory.ShapesSample
+namespace AbstractFactory.ShapesSample;
+
+public enum ShapeTypes
 {
-    public enum ShapeTypes
-    {
-        Square,
-        Rectangle
-    }
+    Square,
+    Rectangle
 }

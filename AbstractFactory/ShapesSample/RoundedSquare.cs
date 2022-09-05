@@ -1,12 +1,12 @@
-﻿using System;
+﻿
+using System;
 
-namespace AbstractFactory.ShapesSample
+namespace AbstractFactory.ShapesSample;
+
+public class RoundedSquare : IShape
 {
-    public class RoundedSquare : IShape
+    public void Draw()
     {
-        public void Draw()
-        {
-            Console.WriteLine("You are a Rounded Square, let's Draw you");
-        }
+        Console.WriteLine("You are a Rounded Square, let's Draw you");
     }
 }

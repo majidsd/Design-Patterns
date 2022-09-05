@@ -1,11 +1,10 @@
 ﻿
-namespace Builder.FastFoodRestaurantSample
+namespace Builder.FastFoodRestaurantSample;
+
+public class Bottle : IPacking
 {
-    public class Bottle : IPacking
+    public string Pack()
     {
-        public string Pack()
-        {
-            return "Bottle";
-        }
+        return "Bottle";
     }
 }

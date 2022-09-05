@@ -1,28 +1,21 @@
-﻿using Observer.NumberSystemSample;
+﻿
 using System;
+using Observer.NumberSystemSample;
 
-namespace Observer
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            #region Number System demo section
-            int firstChnageValue = 20;
-            int secondChnageValue = 18;
-            Subject subject = new ();
 
-            new BinaryObserver(subject);
-            new OctalObserver(subject);
-            new HexadecimalObserver(subject);
+#region Number System demo section
+int firstChangeValue = 20;
+int secondChangeValue = 18;
+Subject subject = new();
 
-            Console.WriteLine($"First chaning for the state to {firstChnageValue}");
-            subject.SetState(firstChnageValue);
-            Console.WriteLine($"Second chaning for the state to {secondChnageValue}");
-            subject.SetState(secondChnageValue);
-            #endregion
+new BinaryObserver(subject);
+new OctalObserver(subject);
+new HexadecimalObserver(subject);
 
-            Console.WriteLine("Done!");
-        }
-    }
-}
+Console.WriteLine($"First chaning for the state to {firstChangeValue}");
+subject.SetState(firstChangeValue);
+Console.WriteLine($"Second chaning for the state to {secondChangeValue}");
+subject.SetState(secondChangeValue);
+#endregion
+
+Console.WriteLine("Done!");

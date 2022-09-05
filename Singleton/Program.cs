@@ -1,17 +1,10 @@
-﻿using System;
+﻿
+using System;
+using Singleton;
 
-namespace Singleton
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            #region Demo Code
-            SingleObjectClass singleObject = SingleObjectClass.getInstance();
-            singleObject.ShowMessage();
+#region Demo Code
+SingleObjectClass singleObject = SingleObjectClass.GetInstance();
+singleObject.ShowMessage();
 
-            #endregion
-            Console.WriteLine("Done!");
-        }
-    }
-}
+#endregion
+Console.WriteLine("Done!");

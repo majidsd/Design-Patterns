@@ -1,12 +1,12 @@
-﻿using System;
+﻿
+using System;
 
-namespace FactoryMethod.ShapesSample
+namespace FactoryMethod.ShapesSample;
+
+public class Square : IShape
 {
-    public class Square : IShape
+    public void Draw()
     {
-        public void Draw()
-        {
-            Console.WriteLine("You are a Square, let's Draw you");
-        }
+        Console.WriteLine("You are a Square, let's Draw you");
     }
 }

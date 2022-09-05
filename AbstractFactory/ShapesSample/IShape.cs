@@ -1,8 +1,7 @@
 ﻿
-namespace AbstractFactory.ShapesSample
+namespace AbstractFactory.ShapesSample;
+
+public interface IShape
 {
-    public interface IShape
-    {
-        void Draw();
-    }
+    void Draw();
 }

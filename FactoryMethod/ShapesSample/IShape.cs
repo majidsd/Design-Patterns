@@ -1,8 +1,7 @@
 ﻿
-namespace FactoryMethod.ShapesSample
+namespace FactoryMethod.ShapesSample;
+
+public interface IShape
 {
-    public interface IShape
-    {
-        void Draw();
-    }
+    void Draw();
 }

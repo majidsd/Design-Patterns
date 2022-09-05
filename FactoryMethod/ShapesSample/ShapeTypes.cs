@@ -1,10 +1,9 @@
 ﻿
-namespace FactoryMethod.ShapesSample
+namespace FactoryMethod.ShapesSample;
+
+public enum ShapeTypes
 {
-    public enum ShapeTypes
-    {
-        Circle,
-        Square,
-        Rectangle
-    }
+    Circle,
+    Square,
+    Rectangle
 }

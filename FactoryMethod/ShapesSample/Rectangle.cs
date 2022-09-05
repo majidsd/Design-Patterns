@@ -1,12 +1,12 @@
-﻿using System;
+﻿
+using System;
 
-namespace FactoryMethod.ShapesSample
+namespace FactoryMethod.ShapesSample;
+
+public class Rectangle : IShape
 {
-    public class Rectangle : IShape
+    public void Draw()
     {
-        public void Draw()
-        {
-            Console.WriteLine("You are a Rectangle, let's Draw you.");
-        }
+        Console.WriteLine("You are a Rectangle, let's Draw you.");
     }
 }

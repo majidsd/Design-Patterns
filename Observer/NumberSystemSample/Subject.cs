@@ -1,34 +1,34 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 
-namespace Observer.NumberSystemSample
+namespace Observer.NumberSystemSample;
+
+public class Subject
 {
-    public class Subject
+    private readonly List<IObserver> observers = new();
+    private int state;
+
+    public int GetState()
     {
-        private List<IObserver> observers = new();
-        private int state;
+        return state;
+    }
 
-        public int GetState()
-        {
-            return state;
-        }
+    public void SetState(int state)
+    {
+        this.state = state;
+        NotifyAllObservers();
+    }
 
-        public void SetState(int state)
-        {
-            this.state = state;
-            NotifyAllObservers();
-        }
+    public void Attach(IObserver observer)
+    {
+        observers.Add(observer);
+    }
 
-        public void Attach(IObserver observer)
+    public void NotifyAllObservers()
+    {
+        foreach(var observer in observers)
         {
-            observers.Add(observer);
-        }
-
-        public void NotifyAllObservers()
-        {
-            foreach(var observer in observers)
-            {
-                observer.Update();
-            }
+            observer.Update();
         }
     }
 }

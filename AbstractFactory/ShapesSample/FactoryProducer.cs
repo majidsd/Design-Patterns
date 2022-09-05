@@ -1,18 +1,17 @@
 ﻿
-namespace AbstractFactory.ShapesSample
+namespace AbstractFactory.ShapesSample;
+
+public class FactoryProducer
 {
-    public class FactoryProducer
+    public static IAbstractFactory GetFactory(bool rounded)
     {
-        public static IAbstractFactory GetFactory(bool rounded)
+        if (rounded)
         {
-            if (rounded)
-            {
-                return new RoundedShapeFactory();
-            }
-            else
-            {
-                return new ShapeFactory();
-            }
+            return new RoundedShapeFactory();
+        }
+        else
+        {
+            return new ShapeFactory();
         }
     }
 }

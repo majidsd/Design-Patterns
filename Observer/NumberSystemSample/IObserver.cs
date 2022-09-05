@@ -1,7 +1,7 @@
-﻿namespace Observer.NumberSystemSample
+﻿
+namespace Observer.NumberSystemSample;
+
+public interface IObserver
 {
-    public interface IObserver
-    {
-        void Update();
-    }
+    void Update();
 }
