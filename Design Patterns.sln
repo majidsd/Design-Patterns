@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31105.61
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{3ABC4758-E3B0-4AE1-97D0-5D01D669E62B}"
 EndProject
@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{4EF3C20C-372A-44C3-8330-8209EEF4038B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{C58852D1-2DE9-4566-A989-062B6BBE5A75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{C58852D1-2DE9-4566-A989-062B6BBE5A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{720BE180-DA51-4289-A49A-2C6FE50DFA0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{36FE39B4-E0D4-45DB-8AA0-C2E379F98EA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{C58852D1-2DE9-4566-A989-062B6BBE5A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C58852D1-2DE9-4566-A989-062B6BBE5A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C58852D1-2DE9-4566-A989-062B6BBE5A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{720BE180-DA51-4289-A49A-2C6FE50DFA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720BE180-DA51-4289-A49A-2C6FE50DFA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720BE180-DA51-4289-A49A-2C6FE50DFA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720BE180-DA51-4289-A49A-2C6FE50DFA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FE39B4-E0D4-45DB-8AA0-C2E379F98EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FE39B4-E0D4-45DB-8AA0-C2E379F98EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FE39B4-E0D4-45DB-8AA0-C2E379F98EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FE39B4-E0D4-45DB-8AA0-C2E379F98EA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
