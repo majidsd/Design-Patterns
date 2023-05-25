@@ -1,5 +1,5 @@
 ﻿
-using Strategy.Operations;
+using Strategy.OperationsSample;
 
 #region Operations Strategy Demo
 OperationContext context1 = new (new OperationAdd());

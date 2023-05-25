@@ -1,5 +1,5 @@
 ﻿
-namespace Strategy.Operations;
+namespace Strategy.OperationsSample;
 
 internal class OperationMultiple : IOperationStrategy
 {
